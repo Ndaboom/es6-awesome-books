@@ -8,7 +8,7 @@
 
 - HTML & CSS
 - jAVASCRIPT
-- LUXION
+- LUXON
 
 ## Live Demo (if available)
 
