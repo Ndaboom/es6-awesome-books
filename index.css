@@ -1,0 +1,150 @@
+/* stylelint-disable declaration-colon-space-after */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable color-hex-case */
+/* stylelint-disable indentation */
+/* stylelint-disable no-missing-end-of-source-newline */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+h1,
+h2,
+p,
+li {
+    font-family: 'PT', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+body {
+    background-color: white;
+}
+
+button,
+.addNewBook {
+    background-color: white;
+    color: black;
+    font-family: 'PT', sans-serif;
+    font-weight: 700;
+}
+
+.blue {
+    color: blue;
+}
+
+.container {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container nav {
+    display: flex;
+    border: 2px black inset;
+}
+
+.container nav h2 {
+    width: 80%;
+    padding-left: 15px;
+}
+
+.options {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    text-align: center;
+    gap: 20px;
+}
+
+.border-right {
+    border-right: 2px black inset;
+}
+
+.options li {
+    padding-top: 23px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.timer-section {
+    width: 100%;
+    text-align: right;
+    font-family: 'PT', sans-serif;
+    font-size:20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.container .main-section h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.container .main-section #books-list {
+    border-style: inset;
+    border-width: 2px;
+    border-color: black;
+}
+
+.book {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book h2 {
+    margin-right: 50px;
+    width: 80%;
+}
+
+.remove_button {
+    height: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.books-crud {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 679px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-form {
+    padding: 10px;
+    border-style: inset;
+    border-width: 0.7px;
+    border-color: black;
+}
+
+.about-view {
+    max-width: 679px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#book-form .addNewBook {
+    width: 20%;
+    height: 45px;
+    justify-content: right !important;
+}
+
+.footer-section {
+    padding: 50px;
+}
