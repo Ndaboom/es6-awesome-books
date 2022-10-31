@@ -10,9 +10,9 @@
 - jAVASCRIPT
 - LUXON
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ndaboom.github.io/es6-awesome-books)
 
 ## Getting Started
 
