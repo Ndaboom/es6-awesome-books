@@ -62,10 +62,14 @@ submitForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (inputTitle.value && inputAuthor.value) {
     currentBookId += 1;
+    // Instatiate book's class with new values
     book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
+    // Add the value via the add method from the book's class
     book.add();
+    // Empty the add book form fields
     inputTitle.value = '';
     inputAuthor.value = '';
+    // Add the active class to the correct current page
     optionsMenu[0].classList.add("blue");
     optionsMenu[1].classList.remove("blue");
   }
