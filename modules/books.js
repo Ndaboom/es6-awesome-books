@@ -5,7 +5,7 @@ const booksList = document.querySelector('#books-list');
 const submitForm = document.querySelector('#book-form');
 const inputTitle = document.getElementById('input-title');
 const inputAuthor = document.getElementById('input-author');
-// Contains list of all taskbar menus
+// Contains list of all navbar menus
 const optionsMenu = document.querySelectorAll(".menu-option");
 let currentBookId = books.length;
 
