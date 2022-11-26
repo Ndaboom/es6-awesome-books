@@ -1,8 +1,12 @@
+import screens from './screens.js';
+
 let books = JSON.parse(localStorage.getItem('books')) || [];
 const booksList = document.querySelector('#books-list');
 const submitForm = document.querySelector('#book-form');
 const inputTitle = document.getElementById('input-title');
 const inputAuthor = document.getElementById('input-author');
+// Contains list of all taskbar menus
+const optionsMenu = document.querySelectorAll(".menu-option");
 let currentBookId = books.length;
 
 class Book {
@@ -35,12 +39,13 @@ class Book {
     bookContainer.appendChild(removeBtn);
     booksList.append(bookContainer);
     });
+    screens(0);
   }
 
   add() {
     books.push(this);
     localStorage.setItem('books', JSON.stringify(books));
-    window.location.reload();
+    this.render();
   }
 
   remove(id) {
@@ -59,6 +64,10 @@ submitForm.addEventListener('submit', (e) => {
     currentBookId += 1;
     book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
     book.add();
+    inputTitle.value = '';
+    inputAuthor.value = '';
+    optionsMenu[0].classList.add("blue");
+    optionsMenu[1].classList.remove("blue");
   }
 });
 
