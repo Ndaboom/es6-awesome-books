@@ -6,9 +6,9 @@
 
 ## Built With
 
-- HTML & CSS
-- jAVASCRIPT
-- LUXON
+- Html & Css
+- Javascript
+- Luxon
 
 ## Live Demo
 
