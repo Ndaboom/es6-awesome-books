@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://ndaboom.github.io/es6-awesome-books)
+[Click here to launch the live demo](https://ndaboom.github.io/es6-awesome-books)
 
 ## Getting Started
 

@@ -1,8 +1,12 @@
+import screens from './screens.js';
+
 let books = JSON.parse(localStorage.getItem('books')) || [];
 const booksList = document.querySelector('#books-list');
 const submitForm = document.querySelector('#book-form');
 const inputTitle = document.getElementById('input-title');
 const inputAuthor = document.getElementById('input-author');
+// Contains list of all taskbar menus
+const optionsMenu = document.querySelectorAll(".menu-option");
 let currentBookId = books.length;
 
 class Book {
@@ -35,12 +39,13 @@ class Book {
     bookContainer.appendChild(removeBtn);
     booksList.append(bookContainer);
     });
+    screens(0);
   }
 
   add() {
     books.push(this);
     localStorage.setItem('books', JSON.stringify(books));
-    window.location.reload();
+    this.render();
   }
 
   remove(id) {
@@ -57,8 +62,16 @@ submitForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (inputTitle.value && inputAuthor.value) {
     currentBookId += 1;
+    // Instatiate book's class with new values
     book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
+    // Add the value via the add method from the book's class
     book.add();
+    // Empty the add book form fields
+    inputTitle.value = '';
+    inputAuthor.value = '';
+    // Add the active class to the correct current page
+    optionsMenu[0].classList.add("blue");
+    optionsMenu[1].classList.remove("blue");
   }
 });
 
